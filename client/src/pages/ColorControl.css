@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+}
+
+.container {
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 10px; /* 네모 박스와 버튼 사이에 여백 추가 */
+}
+
+.control {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+input[type="range"] {
+  width: 150px;
+}
+
+input[type="number"] {
+  width: 50px;
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#modal-box {
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-box.active {
+  display: flex;
+}
+.modal-contents {
+  background-color: #fff;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px; /* 모달에 약간의 둥근 모서리 추가 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.desc p {
+  padding-top:5px;
+  margin-left: 20px; /* 모든 <p> 태그의 시작 위치를 동일하게 맞추기 */
+  margin-top: 10px; /* 위쪽 여백 추가 */
+  margin-bottom: 10px; /* 아래쪽 여백 추가 */
+}
+
+.help-button {
+  background-color: #ccc; /* 배경색을 회색으로 변경 */
+  border: none;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute; /* 절대 위치 지정 */
+  top: 10px; /* 컨테이너 상단에서 10px */
+  right: 10px; /* 컨테이너 오른쪽에서 10px */
+
+}
+
+.content-with-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
