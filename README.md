@@ -146,6 +146,10 @@ client_secret = 'your_client_secret'
 ## 🖼️ 시연 이미지 / 영상
 
 
+
+https://github.com/user-attachments/assets/47c0b69c-5c96-4bd9-bbbe-3da7bb3ccc00
+
+
 ---
 
 ## 🔧 향후 개선 방향
